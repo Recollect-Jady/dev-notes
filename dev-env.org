@@ -1,0 +1,40 @@
+* Dev-Env setup
+
+** Package managers
+*** [[http://brew.sh/][brew]]
+
+*** pip
+$ sudo easy_install pip
+
+*** npm
+$ brew install -g node
+
+*** bower(deprecated)
+$ npm install -g bower
+
+*** yarn
+$ brew install -g yarn
+
+** Bash utils
+$ brew install bash-completion tree
+
+** VCS
+$ brew install git
+
+** Build tools
+$ brew install sbt maven gradle ant
+
+** Cmds invoked by Emacs
+- $ brew install global --with-ctags
+- $ brew install aspell --with-lang-en
+- $ brew install the_silver_searcher multimarkdown
+- $ pip install demjson
+
+** TODO Misc.
+*** TODO npm install -g import-js
+*** TODO npm install -g tern
+*** 4. React Native
+  brew install watchman
+  npm install -g react-native-cli
+  npm install -g yo
+  npm install -g generator-react-webpack
