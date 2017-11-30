@@ -23,16 +23,44 @@ $ brew install git
 
 ** Build tools
 $ brew install sbt maven gradle ant
+$ npm -g install gulp-cli
+
+** Linting tools
+$ npm -g install eslint stylelint stylelint-config-standard
+
+~/.eslintrc
+{
+  "env": {
+    "browser": true,
+    "jquery": true
+  },
+  "extends": "eslint:recommended",
+
+  "rules": {
+    "indent": [ "error", 2 ],
+    "quotes": [ "error", "single" ],
+    "semi": [ "error", "always" ]
+  }
+}
+
+~/.stylelintrc.json
+{
+  "extends": "/usr/local/lib/node_modules/stylelint-config-standard",
+  "rules": {
+  }
+}
+
 
 ** Cmds invoked by Emacs
 - $ brew install global --with-ctags
 - $ brew install aspell --with-lang-en
 - $ brew install the_silver_searcher multimarkdown
 - $ pip install demjson
+- $ npm install -g tern
 
 ** TODO Misc.
 *** TODO npm install -g import-js
-*** TODO npm install -g tern
+
 *** 4. React Native
   brew install watchman
   npm install -g react-native-cli
