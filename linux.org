@@ -15,3 +15,8 @@ $ ssh root@$host
   $ tar xzf jdk-8u144-linux-x64.tar.gz -C /opt/java/
   $ cd /opt/java/
   $ ln -s jdk1.8.0_144/ current
+
+* Creating accounts
+$ ssh root@$host
+  $ useradd $user
+  $ passwd  $user
