@@ -55,8 +55,7 @@ $ npm -g install eslint stylelint stylelint-config-standard
 - $ brew install global --with-ctags
 - $ brew install aspell --with-lang-en
 - $ brew install the_silver_searcher multimarkdown
-- $ pip install demjson
-- $ npm install -g tern
+- $ npm install -g tern jsonlint
 
 ** TODO Misc.
 *** TODO npm install -g import-js
