@@ -1,3 +1,6 @@
 * hosts file
 $ sudo nano /private/etc/hosts
 $ dscacheutil -flushcache
+
+* Check port
+$ lsof -i tcp:$port
