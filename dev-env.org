@@ -22,13 +22,15 @@ $ brew install bash-completion tree
 $ brew install git
 
 ** Build tools
-$ brew install sbt maven gradle ant
-$ npm -g install gulp-cli
+- $ brew install sbt maven gradle ant
+- $ npm -g install gulp-cli
 
 ** Linting tools
 $ npm -g install eslint stylelint stylelint-config-standard
 
 ~/.eslintrc
+#+BEGIN_SRC js
+
 {
   "env": {
     "browser": true,
@@ -43,12 +45,18 @@ $ npm -g install eslint stylelint stylelint-config-standard
   }
 }
 
+#+END_SRC
+
 ~/.stylelintrc.json
+#+BEGIN_SRC sh
+
 {
   "extends": "/usr/local/lib/node_modules/stylelint-config-standard",
   "rules": {
   }
 }
+
+#+END_SRC
 
 
 ** Cmds invoked by Emacs
