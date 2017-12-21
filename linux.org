@@ -1,13 +1,15 @@
 * Passwordless SSH login
+
+#+BEGIN_SRC sh
+
 $ ssh-keygen -t rsa
 $ ssh-copy-id -i ~/.ssh/id_rsa.pub $user@$host
 
+#+END_SRC
+
 * Java setup
-$ echo '
-export JAVA_HOME=/opt/java/current
-export PATH=$PATH:$JAVA_HOME/bin
-export JAVA_OPTS="-Dfile.encoding=UTF-8"
-' >/etc/profile.d/java.sh
+
+#+BEGIN_SRC sh
 
 $ scp jdk-8u144-linux-x64.tar.gz root@$host:~
 $ ssh root@$host
@@ -15,8 +17,20 @@ $ ssh root@$host
   $ tar xzf jdk-8u144-linux-x64.tar.gz -C /opt/java/
   $ cd /opt/java/
   $ ln -s jdk1.8.0_144/ current
+  $ echo '
+export JAVA_HOME=/opt/java/current
+export PATH=$PATH:$JAVA_HOME/bin
+export JAVA_OPTS="-Dfile.encoding=UTF-8"
+' > /etc/profile.d/java.sh
+
+#+END_SRC
 
 * Creating accounts
+
+#+BEGIN_SRC sh
+
 $ ssh root@$host
   $ useradd $user
   $ passwd  $user
+
+#+END_SRC
