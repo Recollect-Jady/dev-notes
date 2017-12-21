@@ -7,13 +7,13 @@
 $ sudo easy_install pip
 
 *** npm
-$ brew install -g node
+$ brew install node
 
 *** bower(deprecated)
 $ npm install -g bower
 
 *** yarn
-$ brew install -g yarn
+$ brew install yarn
 
 ** Bash utils
 $ brew install bash-completion tree
