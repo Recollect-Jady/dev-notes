@@ -9,7 +9,7 @@ $ sudo easy_install pip
 *** npm
 $ brew install node
 
-*** bower(deprecated)
+*** +bower(deprecated)+
 $ npm install -g bower
 
 *** yarn
@@ -67,9 +67,3 @@ $ npm -g install eslint stylelint stylelint-config-standard
 
 ** TODO Misc.
 *** TODO npm install -g import-js
-
-*** 4. React Native
-  brew install watchman
-  npm install -g react-native-cli
-  npm install -g yo
-  npm install -g generator-react-webpack
