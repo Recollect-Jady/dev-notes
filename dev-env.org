@@ -34,8 +34,15 @@ brew install git
 #+END_SRC
 
 ** Build tools
+
+*** sbt & [[http://ensime.github.io/build_tools/sbt/#install][sbt-ensime]]
 #+BEGIN_SRC sh
-brew install sbt maven gradle ant
+brew install sbt
+#+END_SRC
+
+*** others
+#+BEGIN_SRC sh
+brew install maven gradle ant
 npm -g install gulp-cli
 #+END_SRC
 
