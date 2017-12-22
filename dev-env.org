@@ -47,8 +47,10 @@ npm -g install gulp-cli
 #+END_SRC
 
 ** Linting tools
+
+*** eslint
 #+BEGIN_SRC sh
-npm -g install eslint stylelint stylelint-config-standard
+npm -g install eslint
 #+END_SRC
 
 ~/.eslintrc
@@ -68,6 +70,12 @@ npm -g install eslint stylelint stylelint-config-standard
   }
 }
 
+#+END_SRC
+
+*** stylelint
+
+#+BEGIN_SRC
+npm -g install stylelint stylelint-config-standard
 #+END_SRC
 
 ~/.stylelintrc.json
