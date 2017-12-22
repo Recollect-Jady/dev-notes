@@ -23,11 +23,6 @@ npm install -g bower
 brew install yarn
 #+END_SRC
 
-** Bash utils
-#+BEGIN_SRC sh
-brew install bash-completion tree
-#+END_SRC
-
 ** VCS
 #+BEGIN_SRC sh
 brew install git
@@ -101,5 +96,9 @@ npm install -g tern jsonlint
 
 #+END_SRC
 
-** TODO Misc.
+** Misc.
+#+BEGIN_SRC sh
+brew install bash-completion tree p7zip ssh-copy-id
+#+END_SRC
+
 *** TODO npm install -g import-js
