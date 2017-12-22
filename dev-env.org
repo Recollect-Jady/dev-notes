@@ -4,44 +4,44 @@
 *** [[http://brew.sh/][brew]]
 
 *** pip
-#+BEGIN_SRC
-$ sudo easy_install pip
+#+BEGIN_SRC sh
+sudo easy_install pip
 #+END_SRC
 
 *** npm
-#+BEGIN_SRC
-$ brew install node
+#+BEGIN_SRC sh
+brew install node
 #+END_SRC
 
 *** +bower(deprecated)+
-#+BEGIN_SRC
-$ npm install -g bower
+#+BEGIN_SRC sh
+npm install -g bower
 #+END_SRC
 
 *** yarn
-#+BEGIN_SRC
-$ brew install yarn
+#+BEGIN_SRC sh
+brew install yarn
 #+END_SRC
 
 ** Bash utils
-#+BEGIN_SRC
-$ brew install bash-completion tree
+#+BEGIN_SRC sh
+brew install bash-completion tree
 #+END_SRC
 
 ** VCS
-#+BEGIN_SRC
-$ brew install git
+#+BEGIN_SRC sh
+brew install git
 #+END_SRC
 
 ** Build tools
-#+BEGIN_SRC
-$ brew install sbt maven gradle ant
-$ npm -g install gulp-cli
+#+BEGIN_SRC sh
+brew install sbt maven gradle ant
+npm -g install gulp-cli
 #+END_SRC
 
 ** Linting tools
-#+BEGIN_SRC
-$ npm -g install eslint stylelint stylelint-config-standard
+#+BEGIN_SRC sh
+npm -g install eslint stylelint stylelint-config-standard
 #+END_SRC
 
 ~/.eslintrc
@@ -79,10 +79,10 @@ $ npm -g install eslint stylelint stylelint-config-standard
 
 #+BEGIN_SRC sh
 
-$ brew install global --with-ctags
-$ brew install aspell --with-lang-en
-$ brew install the_silver_searcher multimarkdown
-$ npm install -g tern jsonlint
+brew install global --with-ctags
+brew install aspell --with-lang-en
+brew install the_silver_searcher multimarkdown
+npm install -g tern jsonlint
 
 #+END_SRC
 
