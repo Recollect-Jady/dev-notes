@@ -10,3 +10,18 @@ dscacheutil -flushcache
 #+BEGIN_SRC sh
 lsof -i tcp:$port
 #+END_SRC
+
+* VirtualBox VM
+** CentOS7(minimal iso)
+*** Guest additions(GA)
+#+BEGIN_SRC sh
+
+yum update
+yum install bzip2 gcc make perl kernel-devel
+shutdown -r now
+# insert GA cd
+mount /dev/cdrom /mnt
+cd /mnt
+./VBoxLinuxAdditions.run
+
+#+END_SRC
