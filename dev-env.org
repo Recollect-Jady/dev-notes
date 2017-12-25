@@ -15,7 +15,7 @@ brew install node
 
 *** +bower(deprecated)+
 #+BEGIN_SRC sh
-npm install -g bower
+npm -g install bower
 #+END_SRC
 
 *** yarn
@@ -110,7 +110,7 @@ npm -g install stylelint stylelint-config-standard
 brew install global --with-ctags
 brew install aspell --with-lang-en
 brew install the_silver_searcher multimarkdown
-npm install -g tern jsonlint
+npm -g install tern jsonlint
 
 #+END_SRC
 
