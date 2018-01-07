@@ -34,3 +34,21 @@ ssh root@$host
   passwd  $user
 
 #+END_SRC
+
+* NginX [[https://www.nginx.com/resources/wiki/start/topics/tutorials/install/#official-red-hat-centos-packages][installation]] on CentOS
+#+BEGIN_SRC sh
+
+echo '
+[nginx]
+name=nginx repo
+baseurl=http://nginx.org/packages/centos/$releasever/$basearch/
+gpgcheck=0
+enabled=1
+' > /etc/yum.repos.d/nginx.repo
+
+yum install nginx
+
+systemctl enable nginx
+systemctl start nginx
+
+#+END_SRC
