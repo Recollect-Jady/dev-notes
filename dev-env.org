@@ -116,7 +116,7 @@ npm -g install tern jsonlint
 
 ** Misc.
 #+BEGIN_SRC sh
-brew install bash-completion tree p7zip ssh-copy-id
+brew install bash-completion tree p7zip ssh-copy-id nginx
 #+END_SRC
 
 *** TODO npm install -g import-js
