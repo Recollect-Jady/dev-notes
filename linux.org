@@ -52,3 +52,26 @@ systemctl enable nginx
 systemctl start nginx
 
 #+END_SRC
+
+* PostgreSQL installation
+#+BEGIN_SRC sh
+
+yum install https://download.postgresql.org/pub/repos/yum/9.6/redhat/rhel-7-x86_64/pgdg-centos96-9.6-3.noarch.rpm
+yum install postgresql96 postgresql96-server postgresql96-libs postgresql96-contrib postgresql96-devel
+
+# optional postgis
+# yum install postgis2_96 postgis2_96-client
+
+passwd postgres
+/usr/pgsql-9.6/bin/postgresql96-setup initdb
+
+# configure
+su - postgres
+# edit ./9.6/data/postgresql.conf
+# edit ./9.6/data/pg_hba.conf
+exit
+
+systemctl enable postgresql-9.6.service
+systemctl start  postgresql-9.6.service
+
+#+END_SRC
