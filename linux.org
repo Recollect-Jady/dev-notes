@@ -51,6 +51,9 @@ yum install nginx
 systemctl enable nginx
 systemctl start nginx
 
+# scp some-vhost.conf root@$host:/etc/nginx/conf.d/
+nginx -s reload
+
 #+END_SRC
 
 * PostgreSQL installation
