@@ -78,3 +78,14 @@ systemctl enable postgresql-9.6.service
 systemctl start  postgresql-9.6.service
 
 #+END_SRC
+
+* Service setup
+#+BEGIN_SRC sh
+
+scp some-server.service root@$host:/etc/systemd/system/
+ssh root@$host
+  systemctl enable some-server
+  systemctl start  some-server
+  systemctl status some-server
+
+#+END_SRC
