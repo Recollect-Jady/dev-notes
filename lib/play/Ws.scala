@@ -5,7 +5,7 @@ import scala.concurrent.{ExecutionContext, Future}
 import play.api.libs.ws.WSResponse
 
 
-case class WebServiceCallException(status: Int, body: String) extends Exception(s"$status: $body")
+case class WsCallException(status: Int, body: String) extends Exception(s"$status: $body")
 
 trait Ws {
   implicit class ResponseFutureOps(responseFuture: Future[WSResponse]) {
