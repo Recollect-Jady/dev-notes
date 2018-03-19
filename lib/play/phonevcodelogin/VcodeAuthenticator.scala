@@ -18,7 +18,7 @@ import play.api.cache.SyncCacheApi
 class VcodeAuthenticator @Inject() (
   cache: SyncCacheApi,
   helper: VcodeLoginHelper,
-  sms: ShortMessageService,
+  sms: ShortMessageService, // TODO use lib.alisms instead
   vcodeGen: VerificationCodeGenerator
 )(implicit ec: ExecutionContext)
     extends Authenticator[UsernamePasswordCredentials] {
