@@ -89,3 +89,11 @@ ssh root@$host
   systemctl status some-server
 
 #+END_SRC
+
+* curl
+** Query parameters need  URL-encoding
+#+BEGIN_SRC sh
+
+curl -X GET ... -G --data-urlencode 'param1=value 1' --data-urlencode 'param2=value 2'
+
+#+END_SRC
